@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Post from './DiaryView';
@@ -8,6 +8,12 @@ function HomeScreen() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [count, setCount] = useState(-1);
   const [content, setContent] = useState('');
+
+  const updateCount = async(value) => {
+    await AsyncStorage.setItem('@count', value);
+  }
+
+  useEffect(() => {updateCount(count)}, [count]);
 
   const getPosts = async() => {
     let count = await AsyncStorage.getItem('@count');
@@ -44,6 +50,7 @@ function HomeScreen() {
     <View style={{alignItems: 'center'}}>
       <View style={{width: '100%'}}>{content}</View>
       <View style={{width: 100}}><Button title='Clear All' onPress={() => clearAll()} /></View>
+      <View><Text>You have {count} diaries.</Text></View>
     </View>
   )
 };
