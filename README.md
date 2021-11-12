@@ -1,9 +1,12 @@
-#App Name
-Days
+# App Name
+Called: Days
 
-#Elevator pitch
+# Elevator pitch
 
-#Screen shots
+# Screenshots
 
-#Developer notes
-External packages Used: react-native-elements, react-native-vector-icons, react-navigation
+# Developer notes
+External packages Used: 
+ - react-native-elements
+ - react-native-vector-icons
+ - react-navigation
