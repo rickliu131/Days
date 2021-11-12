@@ -1,4 +1,9 @@
-# DiaryApp
+#App Name
+Days
 
-By Yuxuan Liu
-yuxuanliu@brandeis.edu
+#Elevator pitch
+
+#Screen shots
+
+#Developer notes
+External packages Used: react-native-elements, react-native-vector-icons, react-navigation
