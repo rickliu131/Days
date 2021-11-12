@@ -2,10 +2,10 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 
-const Post = ({content, date, author}) => {
+const Post = ({date, author, children}) => {
   return(
     <View style={styles.container}>
-      <Text style={styles.text}>{content}</Text>
+      <Text style={styles.text}>{children}</Text>
       <Text style={styles.text_footnote}>{author}</Text>
       <Text style={styles.text_footnote}>{date}</Text>
     </View>

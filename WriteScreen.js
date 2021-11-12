@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { CheckBox } from 'react-native-elements'
+
 
 function WriteScreen() {
   const [text, setText] = useState('');
+
+  const [isChecked, setIsChecked] = useState(false);
 
   const getDateStr = () => {
     return new Date().toLocaleDateString();
@@ -41,6 +45,8 @@ function WriteScreen() {
         style={{width: '100%', height:'100%', fontSize: 16, color: 'gray'}} onChangeText={(t) => setText(t)} />
       </View>
       <View style={{marginTop: 50, width: 80}}><Button title='Save' onPress={() => storePost()} /></View>
+      <CheckBox containerStyle={{backgroundColor: 'transparent'}} title="Store To Cloud"
+                checked={isChecked} onPress={() => setIsChecked(!isChecked)} />
     </View>
   )
 };
