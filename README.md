@@ -3,6 +3,7 @@ Days
 
 # Elevator pitch
 Diary application
+
 Providing you a nice little place to record your daily feelings!
 
 Features:
