@@ -1,5 +1,5 @@
 # App Name
-Called: Days
+Days
 
 # Elevator pitch
 
