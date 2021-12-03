@@ -85,6 +85,8 @@ const AccountScreen = () => {
       <View style={styles.button_container}>
         <Button title='Save' onPress={() => storeData()}/>
       </View>
+      <View>
+      </View>
     </View>
   )
 

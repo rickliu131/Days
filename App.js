@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -222,4 +221,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
->>>>>>> 6460ef81f2385ec49f0ab7abadffb12f13f9e435

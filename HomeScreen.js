@@ -82,6 +82,9 @@ function HomeScreen() {
 const styles = StyleSheet.create({
   whole: {
     marginTop: 30
+  },
+  another: {
+    
   }
 });
 
